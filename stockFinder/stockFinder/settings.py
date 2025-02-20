@@ -129,3 +129,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# stockFinder
+LOGIN_URL = '/users/login/'
+LOGIN_REDIRECT_URL = '/portfolios/'  # Where to go after login
+LOGOUT_REDIRECT_URL = '/'     

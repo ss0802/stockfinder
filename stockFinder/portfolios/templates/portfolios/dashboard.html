@@ -1,0 +1,14 @@
+<h2>Your Portfolios</h2>
+<a href="{% url 'create_basket' %}">Create New Basket</a>
+
+{% for basket in baskets %}
+    <h3>{{ basket.name }}</h3>
+    <a href="{% url 'add_stock' basket.id %}">Add Stock</a>
+    <ul>
+        {% for stock in basket.stocks.all %}
+            <li>{{ stock.symbol }}</li>
+        {% endfor %}
+    </ul>
+{% empty %}
+    <p>No portfolios created yet.</p>
+{% endfor %}

@@ -1,0 +1,7 @@
+<h2>Add Stock to {{ basket.name }}</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="symbol">Stock Symbol:</label>
+    <input type="text" name="symbol" required>
+    <button type="submit">Add</button>
+</form>
