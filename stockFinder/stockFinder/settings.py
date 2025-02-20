@@ -134,4 +134,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # stockFinder
 LOGIN_URL = '/users/login/'
 LOGIN_REDIRECT_URL = '/portfolios/'  # Where to go after login
-LOGOUT_REDIRECT_URL = '/'     
+LOGOUT_REDIRECT_URL = '/' 
